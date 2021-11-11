@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+    <head>
+        <meta charset="UTF-8">
+        <title>Лабораторная работа №1</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+    <script src = "validator.js"></script>
+    <header>
+        <h2>Веб-программирование, Лабораторная работа №1.  Вариант № <i>10105</i>,  Баканова Ирина, P3210</h2>
+    </header>
+        <table id="main">
+            <tr>
+                <td id = "left_column"></td>
+                <td id = "central_column">
+                    <form name = "mainForm">
+                    <table id = "internal">
+
+                        <tr>
+                            <th colspan="3">
+                                <h3>Выберете изменение по Х:</h3>
+                            </th>
+                            <th rowspan="8">
+                                <img src="areas.png" alt="graph">
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="container">
+                                    <input type="checkbox" name="check_box" value="-2">
+                                    <span class="checkmark"></span>
+                                </label>
+                                -2
+                            </td>
+                            <td>
+                                <label class="container">
+                                    <input type="checkbox" name="check_box" value="-1.5">
+                                    <span class="checkmark"></span>
+                                </label>
+                                -1.5
+                            </td>
+                            <td>
+                                <label class="container">
+                                    <input type="checkbox" name="check_box" value="-1">
+                                    <span class="checkmark"></span>
+                                </label>
+                                -1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="container">
+                                    <input type="checkbox" name="check_box" value="-0.5">
+                                    <span class="checkmark"></span>
+                                </label>
+                                -0.5
+                            </td>
+                            <td>
+                                <label class="container">
+                                    <input type="checkbox" name="check_box" value="0">
+                                    <span class="checkmark"></span>
+                                </label>
+                                0
+                            </td>
+                            <td>
+                                <label class="container">
+                                    <input type="checkbox" name="check_box" value="0.5">
+                                    <span class="checkmark"></span>
+                                </label>
+                                0.5
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="container">
+                                    <input type="checkbox" name="check_box" value="1">
+                                    <span class="checkmark"></span>
+                                </label>
+                                1
+                            </td>
+                            <td>
+                                <label class="container">
+                                    <input type="checkbox" name="check_box" value="1.5">
+                                    <span class="checkmark"></span>
+                                </label>
+                                1.5
+                            </td>
+                            <td>
+                                <label class="container">
+                                    <input type="checkbox" name="check_box" value="2">
+                                    <span class="checkmark"></span>
+                                </label>
+                                2
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th colspan="3">
+                                <h3>Выберете изменение по Y:</h3>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <label>
+                                    <input required size="40%" type="text" id ="input_Y" placeholder="Значение от -5 до 5" >
+                                </label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th colspan="3">
+                                <h3>Выберете изменение по R:</h3>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="3">
+                                <input class=r type="button" value="1" onclick="setR(this)" name="r">
+                                <input class=r type="button" value="1.5" onclick="setR(this)" name="r">
+                                <input class=r type="button" value="2" onclick="setR(this)" name="r">
+                                <input class=r type="button" value="2.5" onclick="setR(this)" name="r">
+                                <input class=r type="button" value="3" onclick="setR(this)" name="r">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="3">
+                                <input type="button" id="send" value="Отправить">
+                            </th>
+
+                        </tr>
+                        <tr>
+                            <th colspan="3">
+                                <input type="button" id="reset" value="Сброс таблицы">
+                            </th>
+                        </tr>
+                    </table>
+                    </form>
+                    <h3>Таблица результатов</h3>
+                    <table class="result_table">
+                        <tr id = "result_table_head">
+                            <th class="variable">X</th>
+                            <th class="variable">Y</th>
+                            <th class="variable">R</th>
+                            <th>Результат попадания</th>
+                            <th>Текущее время</th>
+                            <th>Время работы скрипта</th>
+                        </tr>
+                    </table>
+                </td>
+                <td id = "right_column"></td>
+            </tr>
+        </table>
+    </body>
+</html>
